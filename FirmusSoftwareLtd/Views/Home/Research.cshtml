@@ -1,0 +1,15 @@
+﻿@model System.ServiceModel.Syndication.SyndicationFeed
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div>
+    
+    @foreach (var entry in Model.Items )
+    {
+        @Html.DisplayFor( m => entry )
+    }
+
+</div>
