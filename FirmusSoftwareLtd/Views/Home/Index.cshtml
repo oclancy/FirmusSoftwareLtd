@@ -2,39 +2,92 @@
     ViewBag.Title = "Home";
 }
 
-<h2>@ViewBag.Title</h2>
-<p>
-     Firmus Software Ltd is a software development and consultancy company, specialising in providing bespoke Enterprise Application Integration solutions to the financial services industry.
-</p>
+<!-- Apply blue theme as default for all tiles -->
+<div id="tiles olive">
+    <!-- Sliding Tile that shows 100% of the back tile every 3 seconds -->
+    @*<div class="live-tile exclude" data-stops="100%" data-speed="750" data-delay="3000">
 
-<p>
-     Firmus particularly excels at creating solutions based around messaging platforms such as:
-</p>
+                    <div><img src=@Url.Content("~/images/home-green.png" ) class="horiz-centre-img"  alt="Home" /></div>
+                    <div><p>Return to home page.</p></div>
+                </div>*@
 
-<ul>
-    <li>Solace</li>
-    <li>Rabbit MQ</li>
-    <li>MSMQ</li>
-    <li>IBM WebSphere</li>
-</ul>
+    <div class="live-tile" data-mode="flip" data-delay="4000">
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "Index"})">
+                <img src=@Url.Content("~/images/home-green.png")  alt="home" class="horiz-centre-img" />
+            </a>
+        </div>
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "Index"})">
+                <img src=@Url.Content("~/images/home-green.png")  alt="home" class="horiz-centre-img" />
+            </a>
+        </div>
+    </div>
 
-<p>
-    The core language specialities of Firmus Software Ltd are:
-</p>
+    <div class="live-tile" data-mode="flip" data-delay="4000">
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "Stp"})">
+                <img src=@Url.Content("~/images/services-green.png")  alt="about" class="horiz-centre-img" />
+            </a>
+        </div>
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "Stp"})">
+                <img src=@Url.Content("~/images/services-green.png")  alt="about" class="horiz-centre-img" />
+            </a>
+        </div>
+    </div>
 
-<ul>
-    <li>C++</li>
-    <li>C++/CLI</li>
-    <li>C#</li>
-</ul>
+    <div class="live-tile" data-mode="flip" data-delay="4000">
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "Resesarch"})">
+                <img src=@Url.Content("~/images/news-green.png")  alt="research" class="horiz-centre-img" />
+            </a>
+        </div>
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "Research"})">
+                <img src=@Url.Content("~/images/news-green.png")  alt="research" class="horiz-centre-img" />
+            </a>
+        </div>
+    </div>
 
-<p>
-    Firmus Software Ltd is a Microsoft .NET platform specialists with core competencies in the following:
-</p>
-<ul>
-    <li>WCF</li>
-    <li>WPF</li>
-    <li>ASP.NET (both web forms and MVC)</li>
-    <li>ADO.NET</li>
-</ul>
+    <div class="live-tile" data-mode="flip" data-delay="4000">
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "About"})">
+                <img src=@Url.Content("~/images/about-us-green.png")  alt="about" class="horiz-centre-img" />
+            </a>
+        </div>
+        <div>
+            <a href="@Url.RouteUrl(new []{"Default","Home", "About"})">
+                <img src=@Url.Content("~/images/about-us-green.png")  alt="about" class="horiz-centre-img" />
+            </a>
+        </div>
+    </div>
 
+    @*<!-- Mango Flip List that triggers every 3 seconds -->
+                <div class="list-tile">
+                    <span class="tile-title">flip list (figure 2c)</span>
+                    <ul class="flip-list fourTiles" data-mode="flip-list" data-delay="3000">
+                        <li>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="1" /></div>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="1" /></div>
+                        </li>
+                        <li>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")   alt="2" /></div>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="2" /></div>
+                        </li>
+                        <li>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")   alt="3" /></div>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")  /></div>
+                        </li>
+                        <li data-direction="horizontal">
+                            <div><img src=@Url.Content("~/images/1pixel.gif")   alt="4" /></div>
+                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="4" /></div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Green Static Tile -->
+                <div class="class="horiz-centre-img"live-tile exclude">
+                    <span class="tile-title">static tile (figure 2d)</span>
+                    <p>Static tiles can take advantage of theming too!</p>
+                </div>*@
+</div>

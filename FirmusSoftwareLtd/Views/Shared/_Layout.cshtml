@@ -12,13 +12,14 @@
 <body>
     <div class="content-wrapper">
         <div class="float-left">
+
             <header>
                 <div id="title">
                     <h1>Firmus Software Ltd</h1>
                 </div>
                 @*            <div id="logindisplay">
                 @Html.Partial("_LogOnPartial")
-            </div>*@
+            </div>
                 <nav>
                     <ul id="menu">
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
@@ -27,89 +28,37 @@
                         <li>@Html.ActionLink("Windows 8", "Windows8", "Home")</li>
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                     </ul>
-                </nav>
+                </nav>*@
             </header>
-
-            <!-- Apply blue theme as default for all tiles -->
-            <div id="tiles" class="blue home">
-                <!-- Sliding Tile that shows 100% of the back tile every 3 seconds -->
-                <div class="live-tile" data-stops="100%" data-speed="750" data-delay="3000">
-                    <span class="tile-title">slide tile (figure 2a)</span>
-                    <div><img src=@Url.Content("~/images/1pixel.gif")  alt="home" /></div>
-                    <div><img src=@Url.Content("~/images/1pixel.gif")  alt="2" /></div>
-                </div>
-                <!-- Red Flip Tile that flips every 4 seconds -->
-                <div class="red live-tile" data-mode="flip" data-delay="4000">
-                    <div>
-                        <img src=@Url.Content("~/images/1pixel.gif")  alt="3" />
-                        <a class="tile-title">flip tile front (figure 2b)</a>
-                    </div>
-                    <div>
-                        <img src=@Url.Content("~/images/1pixel.gif")  alt="4" />
-                        <a class="tile-title">flip tile back (figure 2b)</a>
-                        </div>
-                </div>
-                <!-- Mango Flip List that triggers every 3 seconds -->
-                <div class="mango list-tile">
-                    <span class="tile-title">flip list (figure 2c)</span>
-                    <ul class="flip-list fourTiles" data-mode="flip-list" data-delay="3000">
-                        <li>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="1" /></div>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="1" /></div>
-                        </li>
-                        <li>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")   alt="2" /></div>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="2" /></div>
-                        </li>
-                        <li>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")   alt="3" /></div>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")  /></div>
-                        </li>
-                        <li data-direction="horizontal">
-                            <div><img src=@Url.Content("~/images/1pixel.gif")   alt="4" /></div>
-                            <div><img src=@Url.Content("~/images/1pixel.gif")  alt="4" /></div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Green Static Tile -->
-                <div class="green live-tile exclude">
-                    <span class="tile-title">static tile (figure 2d)</span>
-                    <p>Static tiles can take advantage of theming too!</p>
-                </div>
-            </div>
-
 
             <section id="main">
                 @RenderBody()
             </section>
-@*            <footer class="fix-bottom">
+            @*            <footer class="fix-bottom">
                 <img src="../../Content/MCTS(rgb)_513_1099_1098.gif" class="horiz-centre-img" />
             </footer>*@
 
             <footer class="appbar">
-               <nav>
-                  <ul id="menu" class="appbar-buttons">
-                      <li>
-                          <a href="#" class="home"><img src="/images/1pixel.gif" alt="home" /></a>
-                          <span class="charm-title">Home</span>
-                      </li>
-                      <li>
-                          <a href="#" class="about"><img src="/images/1pixel.gif" alt="about" /></a>
-                          <span class="charm-title">About</span>
-                      </li>
-                      <li>
-                          <a href="#" target="_blank" class="twitter"><img src="/images/1pixel.gif" alt="twitter" /></a>
-                          <span class="charm-title">Twitter</span>
-                      </li>
-                  </ul>
-              </nav>
-              <a class="etc">&bull;&bull;&bull;</a>
-              <ul class="theme-options clear">
-       
-              </ul>
-              <ul class="base-theme-options clear">     
-              </ul>
-        </footer>
+                <nav>
+                    <ul id="appbarmenu" class="appbar-buttons">
+                        <li>
+                            <a href="#" class="home">
+                                <img src="/images/1pixel.gif" alt="home" /></a>
+                            <span class="charm-title">Home</span>
+                        </li>
+                        <li>
+                            <a href="#" class="about">
+                                <img src="/images/1pixel.gif" alt="about" /></a>
+                            <span class="charm-title">About</span>
+                        </li>
+                    </ul>
+                </nav>
+                <a class="etc">&bull;&bull;&bull;</a>
+                <ul class="theme-options clear">
+                </ul>
+                <ul class="base-theme-options clear">
+                </ul>
+            </footer>
 
 
         </div>

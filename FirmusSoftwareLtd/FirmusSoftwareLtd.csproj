@@ -239,8 +239,19 @@
     <Content Include="Global.asax" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\1pixel.gif" />
+    <Content Include="Images\about-us-green.png" />
+    <Content Include="Images\email-green.png" />
+    <Content Include="Images\favorite-green.png" />
+    <Content Include="Images\feed-green.png" />
+    <Content Include="Images\home-green.png" />
     <Content Include="Images\metroIcons.jpg" />
     <Content Include="Images\metroIcons_light.jpg" />
+    <Content Include="Images\news-green.png" />
+    <Content Include="Images\services-green.png" />
+    <TypeScriptCompile Include="Scripts\AccordionWrapper.ts" />
+    <Content Include="Scripts\AccordionWrapper.js">
+      <DependentUpon>AccordionWrapper.ts</DependentUpon>
+    </Content>
     <Content Include="Scripts\Site.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
