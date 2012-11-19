@@ -23,6 +23,11 @@ namespace FirmusSoftwareLtd.Controllers
 
         }
 
+        public PartialViewResult Partial()
+        {
+            return PartialView();
+        }
+
         public ActionResult Windows8()
         {
             return View();
