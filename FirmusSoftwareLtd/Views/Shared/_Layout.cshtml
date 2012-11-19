@@ -31,23 +31,81 @@
                 </nav>*@
             </header>
 
-            <section id="main">
-                @RenderBody()
+            <section id="main" style="height:inherit" >
+                
+                <div id="tiles" style="position:relative">
+
+@*                <div class="live-tile" data-mode="flip" data-delay="3000" data-initDelay="700">
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="Index", controller="Home"})">
+                            <img src=@Url.Content("~/images/home-green.png")  alt="home" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="Index", controller="Home"})">
+                            <img src=@Url.Content("~/images/home-green.png")  alt="home" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                </div>*@
+
+                <div class="live-tile" data-mode="flip" data-delay="4000">
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="Stp", controller="Home"})">
+                            <img src=@Url.Content("~/images/services-green.png")  alt="about" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="Stp", controller="Home"})">
+                            <img src=@Url.Content("~/images/services-green.png")  alt="about" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="live-tile" data-mode="flip" data-delay="5000" >
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="Research", controller="Home"})">
+                            <img src=@Url.Content("~/images/news-green.png")  alt="research" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="Research", controller="Home"})">
+                            <img src=@Url.Content("~/images/news-green.png")  alt="research" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="live-tile" data-mode="flip" data-delay="3000" data-initDelay="500">
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="About", controller="Home"})">
+                            <img src=@Url.Content("~/images/about-us-green.png")  alt="about" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="@Url.RouteUrl("Default",new {action="About", controller="Home"})">
+                            <img src=@Url.Content("~/images/about-us-green.png")  alt="about" class="horiz-centre-img" />
+                        </a>
+                    </div>
+                </div>
+
+                </div>
             </section>
-            @*            <footer class="fix-bottom">
-                <img src="../../Content/MCTS(rgb)_513_1099_1098.gif" class="horiz-centre-img" />
-            </footer>*@
+
+            <div>
+            @RenderBody()
+            </div>
+
+            <section id="info" />
 
             <footer class="appbar">
                 <nav>
                     <ul id="appbarmenu" class="appbar-buttons">
                         <li>
-                            <a href="#" class="home">
+                            <a href="@Url.RouteUrl("Default",new {action="Index", controller="Home"})" class="home">
                                 <img src="/images/1pixel.gif" alt="home" /></a>
                             <span class="charm-title">Home</span>
                         </li>
                         <li>
-                            <a href="#" class="about">
+                            <a href="@Url.RouteUrl("Default",new {action="About", controller="Home"})" class="about">
                                 <img src="/images/1pixel.gif" alt="about" /></a>
                             <span class="charm-title">About</span>
                         </li>
@@ -57,6 +115,7 @@
                 <ul class="theme-options clear">
                 </ul>
                 <ul class="base-theme-options clear">
+                    
                 </ul>
             </footer>
 
@@ -66,6 +125,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/knockout")
     @Scripts.Render("~/Scripts/Site.js")
 
     @RenderSection("scripts", required: false)
