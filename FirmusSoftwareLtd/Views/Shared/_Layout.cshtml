@@ -35,7 +35,7 @@
                 
                 <div id="tiles" style="position:relative">
 
-                <div class="live-tile" data-mode="flip" data-delay="3000" data-initDelay="700">
+@*                <div class="live-tile" data-mode="flip" data-delay="3000" data-initDelay="700">
                     <div>
                         <a href="@Url.RouteUrl("Default",new {action="Index", controller="Home"})">
                             <img src=@Url.Content("~/images/home-green.png")  alt="home" class="horiz-centre-img" />
@@ -46,7 +46,7 @@
                             <img src=@Url.Content("~/images/home-green.png")  alt="home" class="horiz-centre-img" />
                         </a>
                     </div>
-                </div>
+                </div>*@
 
                 <div class="live-tile" data-mode="flip" data-delay="4000">
                     <div>
@@ -100,12 +100,12 @@
                 <nav>
                     <ul id="appbarmenu" class="appbar-buttons">
                         <li>
-                            <a href="#" class="home">
+                            <a href="@Url.RouteUrl("Default",new {action="Index", controller="Home"})" class="home">
                                 <img src="/images/1pixel.gif" alt="home" /></a>
                             <span class="charm-title">Home</span>
                         </li>
                         <li>
-                            <a href="#" class="about">
+                            <a href="@Url.RouteUrl("Default",new {action="About", controller="Home"})" class="about">
                                 <img src="/images/1pixel.gif" alt="about" /></a>
                             <span class="charm-title">About</span>
                         </li>
@@ -115,6 +115,7 @@
                 <ul class="theme-options clear">
                 </ul>
                 <ul class="base-theme-options clear">
+                    
                 </ul>
             </footer>
 
