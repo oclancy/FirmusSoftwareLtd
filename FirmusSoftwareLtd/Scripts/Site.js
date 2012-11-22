@@ -1,4 +1,10 @@
-﻿$(document).ready(function () {
+﻿function resize() {
+    if (window.location.href == "http://localhost:2358/") {
+        $('#tiles').css('position', 'relative');
+    }
+}
+
+$(document).ready(function () {
 
     $(".appbar").applicationBar({
         preloadAltBaseTheme: true,
@@ -22,12 +28,9 @@
 
     $(window).resize(function (ev)
     {
-        if (window.location.href == "http://localhost:2358/#") {
-            var mainHeight = $(tiles).parent().parent().height();
-
-            $(tiles).css("position", "relative");
-            $(tiles).css("top", mainHeight / 2);
-        }
+        resize();
     });
+
+    resize();
 
 });
