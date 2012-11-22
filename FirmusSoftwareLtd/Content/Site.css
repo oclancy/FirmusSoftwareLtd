@@ -715,7 +715,7 @@ tr.pager td
 
 #tiles
 {
-    min-height:200px;
+    padding-top:20px;
     top:200px;
     text-align:center;
 }

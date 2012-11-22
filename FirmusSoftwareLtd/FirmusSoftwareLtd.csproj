@@ -248,6 +248,7 @@
     <Content Include="Images\metroIcons_light.jpg" />
     <Content Include="Images\news-green.png" />
     <Content Include="Images\services-green.png" />
+    <Content Include="Views\Home\AboutPart.cshtml" />
     <TypeScriptCompile Include="Scripts\AccordionWrapper.ts" />
     <Content Include="Scripts\AccordionWrapper.js">
       <DependentUpon>AccordionWrapper.ts</DependentUpon>

@@ -5,7 +5,7 @@
     color:#fff;
     /*float:left;*/
     display:inline-block;
-    height: 180px;
+    height: 130px;
     margin: 0 auto;
     overflow:hidden;
     position:relative;
@@ -540,6 +540,7 @@ img.full , a.full
 .appbar-buttons a.home>img { background-position:-104px -12px; }
 .appbar-buttons a.about>img { background-position:-198px -99px;  }
 .appbar-buttons a.twitter>img { background-position:-198px -12px;  }
+.appbar-buttons a.mail>img { background-position:-12px -277px;  }
 .appbar-buttons li a:active, ul#menu li.selected a, .appbar-buttons li a:hover { text-decoration: none; }
 
 .appbar a.etc, .appbar a:hover.etc,.appbar a:visited.etc
