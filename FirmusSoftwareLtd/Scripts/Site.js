@@ -1,5 +1,5 @@
 ﻿function resize() {
-    if (window.location.href == "http://localhost:2358/") {
+    if (window.location.href == "http://firmus-software.co.uk/") {
         $('#tiles').css('position', 'relative');
     }
 }
